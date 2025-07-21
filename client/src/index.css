@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 11%, 15%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 13%, 65%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 11%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 11%, 15%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(230, 63%, 31%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(215, 25%, 27%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(230, 63%, 31%);
+  --radius: 0.5rem;
+  
+  /* Labtek custom colors */
+  --labtek-navy: hsl(236, 49%, 31%);
+  --labtek-blue: hsl(207, 61%, 59%);
+  --labtek-light: hsl(215, 93%, 69%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(240, 5%, 65%);
+  --popover: hsl(240, 10%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 4%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(236, 49%, 31%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom utility classes */
+.text-labtek-navy {
+  color: hsl(236, 49%, 31%);
+}
+
+.text-labtek-blue {
+  color: hsl(207, 61%, 59%);
+}
+
+.text-labtek-light {
+  color: hsl(215, 93%, 69%);
+}
+
+.bg-labtek-navy {
+  background-color: hsl(236, 49%, 31%);
+}
+
+.bg-labtek-blue {
+  background-color: hsl(207, 61%, 59%);
+}
+
+.bg-labtek-light {
+  background-color: hsl(215, 93%, 69%);
+}
+
+.border-labtek-blue {
+  border-color: hsl(207, 61%, 59%);
+}
+
+.hover\:bg-labtek-blue:hover {
+  background-color: hsl(207, 61%, 59%);
+}
+
+.hover\:text-labtek-navy:hover {
+  color: hsl(236, 49%, 31%);
+}
+
+.focus\:ring-labtek-blue:focus {
+  --tw-ring-color: hsl(207, 61%, 59%);
+}
