@@ -3,32 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(207, 61%, 59%);
-  --foreground: hsl(210, 11%, 15%);
-  --muted: hsl(210, 40%, 98%);
-  --muted-foreground: hsl(215, 13%, 65%);
+  --background: hsl(210, 60%, 96%); /* Bleu ciel très pâle */
+  --foreground: hsl(215, 28%, 17%); /* Bleu marine doux */
+  --muted: hsl(210, 40%, 92%); /* Bleu gris clair */
+  --muted-foreground: hsl(215, 14%, 40%); /* Bleu gris moyen */
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(210, 11%, 15%);
+  --popover-foreground: hsl(215, 28%, 17%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(210, 11%, 15%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
+  --card-foreground: hsl(215, 28%, 17%);
+  --border: hsl(214, 32%, 85%);
+  --input: hsl(214, 32%, 85%);
   --primary: hsl(230, 63%, 31%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
   --secondary-foreground: hsl(215, 25%, 27%);
-  --accent: hsl(210, 40%, 98%);
+  --accent: hsl(210, 40%, 96%);
   --accent-foreground: hsl(215, 25%, 27%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(230, 63%, 31%);
   --radius: 0.5rem;
-  
+
   /* Labtek custom colors */
   --labtek-navy: hsl(236, 49%, 31%);
   --labtek-blue: hsl(207, 61%, 59%);
   --labtek-light: hsl(215, 93%, 69%);
 }
+
 
 .dark {
   --background: hsl(240, 10%, 4%);
